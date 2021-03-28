@@ -1,0 +1,10 @@
+[Unit]
+Description=waitthis service runs the motd bash script 
+[Service]
+Type=simple
+ExecStart=/home/vagrant/week11/motd
+WorkingDirectory=/home/vagrant/week11
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
